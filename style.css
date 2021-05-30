@@ -1,0 +1,269 @@
+/* VARIABLE */
+:root {
+  --font-sans-serif: "Open Sans", sans-serif;
+  --font-serif: "Merriweather", serif;
+
+  --bg-color-primary: #202020;
+  --bg-color-secondary: #181818;
+
+  --font-color-primary: #ffffff;
+  --font-color-secondary: #bbbbbb;
+  --font-color-highlight: #feb960;
+}
+
+/* Generique */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: var(--font-color-primary);
+}
+
+a {
+  color: var(--font-color-primary);
+  text-decoration: none;
+}
+
+button {
+  border: 2px solid inherit;
+  color: inherit;
+  background-color: transparent;
+  border-radius: 50%;
+  display: block;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+.highlight,
+.titlepart,
+.details {
+  color: var(--font-color-highlight);
+}
+
+/* Titre basics*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
+}
+
+h1 {
+  line-height: 5.6rem;
+  font-size: 4rem;
+}
+
+h2 {
+  line-height: 4rem;
+  font-size: 2.5rem;
+}
+
+h3 {
+  line-height: 3.6rem;
+  font-size: 1.9rem;
+}
+
+.titlepart {
+  font-family: var(--font-sans-serif);
+  font-size: 0.9rem;
+  margin: 21px 0;
+}
+
+.vertical-orange {
+  border-left: 2px solid var(--font-color-highlight);
+  display: inline-block;
+  height: 125px;
+}
+
+.container {
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 100vh;
+  width: auto;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: var(--font-sans-serif);
+}
+.details i.fas {
+  margin-left: 0.6rem;
+}
+
+.details p {
+  color: var(--font-color-primary);
+  font-weight: 800;
+}
+
+/* BANNIERE */
+.banner {
+  background: center center / cover no-repeat url(img/banniere.jpg);
+  height: 100vh;
+}
+
+.banner-titlepart {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Banner Title */
+.banner-container {
+  /* action sur la titlepart et le footer */
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-container a.arrow-down {
+  display: flex;
+  text-align: center;
+  margin: 60px auto;
+  padding: 15px;
+  color: var(--font-color-highlight);
+  font-size: 1.5rem;
+}
+
+.banner-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.banner-title h1 {
+  max-width: 750px;
+
+  line-height: 5.6rem;
+}
+
+/* Banner Baseline */
+.banner-baseline {
+  font-family: var(--font-sans-serif);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.banner-baseline p {
+  padding: 0 20px;
+  font-size: 0.8rem;
+}
+
+.banner-baseline p:nth-child(2) {
+  border: solid var(--font-color-highlight);
+  border-width: 0 2px 0 2px;
+}
+
+/* Banner Footer */
+.banner-footerpart {
+  height: 5vh;
+  font-weight: bold;
+  font-family: var(--font-sans-serif);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.banner-footerpart button {
+  font-size: 1.2rem;
+  color: var(--font-color-highlight);
+  border: 1px solid var(--font-color-highlight);
+  width: 2.3em;
+  height: 2.3em;
+}
+
+.banner-footerpart .fas {
+  color: var(--font-color-highlight);
+  margin-left: 15px;
+}
+
+/* SERVICE */
+.service {
+  height: 100vh;
+  background-color: var(--bg-color-primary);
+}
+
+.service-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.service-top {
+  /* a supprimer */
+  /* border: 4px solid green; */
+  margin: 0 auto 51px;
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-top h2 {
+  text-align: center;
+  height: 170px;
+}
+
+.service-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.service-bottom i {
+  color: var(--font-color-highlight);
+}
+
+.service-bottom h3 {
+}
+
+.service-bottom * {
+  margin: 0.8rem 0;
+}
+
+.service-bottom .service-bloc {
+  max-width: 220px;
+}
+
+.service-bloc p,
+.service-bloc .details {
+  font-family: var(--font-sans-serif);
+}
+
+.service-bottom i.service-icon {
+  font-size: 1.5em;
+}
+.service-bloc p {
+  color: var(--font-color-secondary);
+  font-size: 0.8rem;
+}
+
+/* BRANDING */
+.branding {
+  height: 100vh;
+  background-color: var(--bg-color-secondary);
+}
+
+.branding-container {
+}
+
+.branding-img {
+  background-color: var(--font-color-secondary);
+  width: 800px;
+  height: 600px;
+}
+.branding-right {
+  margin: 0 10px;
+}
